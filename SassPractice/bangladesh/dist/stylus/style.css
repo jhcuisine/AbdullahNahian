@@ -1,0 +1,29 @@
+#header {
+  color: #4d926f;
+  margin: 20px;
+  padding: 10px/2;
+  border: 1px solid #458364;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+#header .nested {
+  font-size: 15px;
+  color: #69b08c;
+}
+@media (max-width: 600px) {
+  #header {
+    color: #458364;
+    margin: 10px;
+    padding: 2.5px;
+  }
+  #header .nested {
+    font-size: 10px;
+    color: #57a57d;
+  }
+}
+#footer {
+  font-size: 20px;
+  margin: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

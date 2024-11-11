@@ -1,0 +1,32 @@
+/* _buttons.less */
+@primary-color: #3498db;
+@secondary-color: #2ecc71;
+@font-family: 'Arial', sans-serif;
+
+.button {
+  font-family: @font-family;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+
+  &--primary {
+    background-color: @primary-color;
+    color: white;
+
+    &:hover {
+      background-color: darken(@primary-color, 10%);
+    }
+  }
+
+  &--secondary {
+    background-color: @secondary-color;
+    color: white;
+
+    &:hover {
+      background-color: darken(@secondary-color, 10%);
+    }
+  }
+}

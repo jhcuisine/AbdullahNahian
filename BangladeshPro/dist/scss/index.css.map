@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.scss","index.css"],"names":[],"mappings":"AAEA;EACE,UAHW;ACEb","file":"index.css","sourcesContent":["$text-color: red;\r\n\r\nh1 {\r\n  color: $text-color;\r\n}\r\n","h1 {\n  color: red;\n}"]}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["nesting.less"],"names":[],"mappings":"AAAA,QACE,WAAA,CADF,oBAGI,cAAA,CAHJ,cAMI,WAAA","file":"nesting.css","sourcesContent":["#header {\r\n  color: black;\r\n  .navigation {\r\n    font-size: 12px;\r\n  }\r\n  .logo {\r\n    width: 100px;\r\n  }\r\n}\r\n"]}

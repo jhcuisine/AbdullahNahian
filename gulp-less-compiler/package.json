@@ -1,0 +1,32 @@
+{
+  "name": "gulp-less-compiler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "assert": "^2.1.0",
+    "chai": "^5.1.1",
+    "chalk": "^5.3.0",
+    "del": "^6.1.1",
+    "gulp": "^5.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-mocha": "^10.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "less": "^4.2.0",
+    "mocha": "^10.7.3",
+    "object-assign": "^4.1.1",
+    "plugin-error": "^2.0.1",
+    "replace-ext": "^2.0.0",
+    "through2": "^4.0.2",
+    "vinyl": "^3.0.0",
+    "vinyl-sourcemaps-apply": "^0.2.1"
+  }
+}

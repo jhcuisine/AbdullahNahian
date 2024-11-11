@@ -1,0 +1,5 @@
+@for $i from 1 through 12 {
+  p-#{10 * $i} {
+    padding: 10 * $i + px;
+  }
+}

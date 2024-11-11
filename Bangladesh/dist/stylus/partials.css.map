@@ -1,0 +1,1 @@
+{"version":3,"sources":["partials.styl"],"names":[],"mappings":"AAEA,KACI,wBAAkB,CAClB,aAAO","file":"partials.css","sourcesContent":["@import './_variables.styl';\r\n\r\nbody {\r\n    background-color: primary-color;\r\n    color: secondary-color;\r\n}\r\n"]}

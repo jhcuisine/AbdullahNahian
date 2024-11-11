@@ -1,0 +1,109 @@
+{
+  // Set the default code formatter for the editor
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Enable automatic formatting on save
+  "editor.formatOnSave": true,
+
+  // Associate file types with specific languages
+  "files.associations": {
+    "*.css": "css",
+    "*.scss": "scss",
+    "*.less": "less",
+    "*.styl": "stylus",
+    "*.pcss": "postcss"
+  },
+
+  // Include additional glob patterns for watching
+  "files.watcherExclude": {
+    "**/node_modules": true,
+    "**/dist": true
+  },
+
+  // Specify default formatter for specific languages
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[sass]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[less]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[stylus]": {
+    "editor.defaultFormatter": "thisismanta.stylus-supremacy"
+  },
+
+  // Specify default formatter for PostCSS files (.pcss)
+  "[postcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Enable linting for CSS files using PostCSS
+  "css.validate": false,
+  "postcss.enable": true, // Enable PostCSS language support
+  "postcss.validate": true, // Validate PostCSS files
+  "postcss.lint": {
+    // Configuration for PostCSS linting
+    "rules": {
+      "block-no-empty": true,
+      "color-no-invalid-hex": true,
+      "font-family-no-duplicate-names": true,
+      "property-no-unknown": true,
+      "unit-no-unknown": true
+      // Add other linting rules as needed
+    }
+  },
+
+  // Configure Prettier settings
+  "prettier.singleQuote": true, // Use single quotes instead of double quotes
+  "prettier.trailingComma": "es5", // Print trailing commas wherever possible
+  "prettier.semi": true, // Print semicolons at the ends of statements
+  "prettier.useTabs": false, // Indent with tabs instead of spaces
+  "prettier.tabWidth": 2, // Specify the number of spaces per indentation-level
+  "prettier.printWidth": 100, // Specify the line length that the printer will wrap
+  "prettier.endOfLine": "auto", // Which end of line characters to apply
+
+  // Enable ESLint integration for JavaScript linting
+  "eslint.validate": ["javascript", "javascriptreact", "html", "typescript"],
+
+  // Enable Stylelint for CSS/SCSS/LESS/Stylus linting
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "scss", "less", "stylus", "postcss"],
+
+  // Enable linting on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit", // Fix ESLint issues on save
+    "source.fixAll.stylelint": "explicit" // Fix Stylelint issues on save
+  },
+
+  // Integrate with Gulp tasks directly
+  "task.autoDetect": "on",
+
+  // Enable Emmet in CSS/SCSS/LESS files for faster coding
+  "emmet.includeLanguages": {
+    "scss": "css",
+    "less": "css",
+    "stylus": "css",
+    "postcss": "css"
+  },
+
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.suggestSelection": "first"
+}

@@ -1,0 +1,6 @@
+@import './_variables.css';
+
+body {
+  font-size: $font-size;
+  background-color: $primary-color;
+}

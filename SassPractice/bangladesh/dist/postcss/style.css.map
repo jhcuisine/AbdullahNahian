@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,SAIE,4CAAoD,CAHpD,YAAa,CACb,kBAAmB,CACnB,wBAAiB,CAAjB,qBAAiB,CAAjB,gBAEF","file":"style.css","sourcesContent":[".example {\r\n  display: grid;\r\n  transition: all .5s;\r\n  user-select: none;\r\n  background: linear-gradient(to bottom, white, black);\r\n}\r\n"]}

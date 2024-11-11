@@ -1,0 +1,35 @@
+.box {
+  font-size: 30px;
+  font-size: -10px;
+  font-size: 20px;
+  font-size: 5px;
+}
+
+.numatic {
+  padding: 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+  padding: 0;
+  padding: 9007199254740991;
+  padding: -9007199254740991;
+  padding: 3.1415926536;
+  padding: 2.7182818285;
+  padding: 0;
+  padding: 3.1;
+  padding: 4;
+  padding: 3;
+  padding: 3;
+  padding: 30;
+}
+
+.logic {
+  margin: true;
+  margin: false;
+  margin: false;
+  margin: false;
+  padding: true;
+  padding: true;
+  padding: true;
+  padding: false;
+  width: false;
+  width: true;
+}
+/*# sourceMappingURL=numaric.css.map */

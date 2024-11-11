@@ -1,0 +1,1 @@
+{"version":3,"sources":["partials.css"],"names":[],"mappings":"AAEA;EACE,eAAqB;EACrB,yBAAgC;AAClC","file":"partials.css","sourcesContent":["@import './_variables.css';\r\n\r\nbody {\r\n  font-size: $font-size;\r\n  background-color: $primary-color;\r\n}\r\n"]}

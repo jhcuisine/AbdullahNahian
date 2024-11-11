@@ -1,0 +1,23 @@
+.warning, .error, .success, .message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.height {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
+}
+/*# sourceMappingURL=inheritance.css.map */

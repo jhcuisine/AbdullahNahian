@@ -1,0 +1,41 @@
+.example {
+    display: grid;
+    transition: all .5s;
+    user-select: none;
+    background: linear-gradient(to bottom, white, black);
+}
+
+// Test new features of LESS
+@color: #4D926F;
+
+// Use a new feature or syntax from the latest version
+@base: 10px;
+
+#header {
+  color: @color;
+  margin: @base * 2;
+  
+  .nested {
+    font-size: @base * 1.5;
+  }
+}
+
+@media (max-width: 600px) {
+  #header {
+    color: darken(@color, 10%);
+  }
+}
+
+.widget {
+    color: #efefef;
+    background-color: $color;
+  }
+
+
+  .block {
+    color: red; 
+    .inner {
+      background-color: $color; 
+    }
+    color: blue;  
+  } 

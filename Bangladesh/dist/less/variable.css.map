@@ -1,0 +1,1 @@
+{"version":3,"sources":["variable.less"],"names":[],"mappings":"AAGA,QACE,UAAA,CACA,kBAAA","file":"variable.css","sourcesContent":["@width: 10px;\r\n@height: @width + 10px;\r\n\r\n#header {\r\n  width: @width;\r\n  height: @height;\r\n}\r\n"]}

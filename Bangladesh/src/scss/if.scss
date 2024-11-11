@@ -1,0 +1,12 @@
+// $sizes: 10px, 20px, 30px;
+
+// @each $size in $sizes {
+//   @if $size > 15px {
+//     $size-name: $size / 1px;
+//     .icon-#{$size-name} {
+//       font-size: $size;
+//       height: $sizes;
+//       width: $size;
+//     }
+//   } 
+// }

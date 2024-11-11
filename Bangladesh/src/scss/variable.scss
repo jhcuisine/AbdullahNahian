@@ -1,0 +1,11 @@
+$display: flex;
+$transition: all 0.5s;
+$user-select: none;
+$background: linear-gradient(to bottom, white, black);
+
+.example {
+  display: $display;
+  transition: $transition;
+  user-select: $user-select;
+  background: $background;
+}

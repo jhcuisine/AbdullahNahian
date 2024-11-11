@@ -1,0 +1,118 @@
+// $grid-columns: 12;
+// $gutter-width: 30px;
+// $column-padding: 15px;
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px,
+//   xxl: 1400px,
+// );
+
+// $container-widths: (
+//   xs: 100%,
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1140px,
+//   xxl: 1320px,
+// );
+
+// // Container styles
+// .container,
+// .container-fluid {
+//   width: 100%;
+//   margin: 0 auto;
+//   padding: 0 calc(#{$gutter-width / 2});
+//   .row {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin: 0 calc(-#{$column-padding});
+//   }
+// }
+
+// // Responsive container and column classes
+// @each $breakpoint, $min-width in $grid-breakpoints {
+//   @media (min-width: $min-width) {
+//     .container {
+//       @if map-has-key($container-widths, $breakpoint) {
+//         max-width: map-get($container-widths, $breakpoint);
+//       }
+//     }
+
+//     @for $i from 1 through $grid-columns {
+//       .col-#{$breakpoint}-#{$i} {
+//         width: (100 / $grid-columns) * $i * 1%;
+//         padding: 0 #{$column-padding};
+//         margin-top: 20px;
+//       }
+//     }
+//   }
+// }
+
+// .single-service {
+//   background-color: tomato;
+//   padding: 20px;
+// }
+
+$grid-columns: 12;
+$gutter-width: 30px;
+$column-padding: 15px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+$container-widths: (
+  xs: 100%,
+  sm: 540px,
+  md: 720px,
+  lg: 920px,
+  xl: 1140px,
+  xxl: 1320px,
+);
+
+@function negative-margin($value) {
+  @return -$value;
+}
+.container,
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 calc($gutter-width / 2);
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 negative-margin($column-padding);
+  }
+}
+
+// Responsive container and column classes
+@each $breakpoint, $min-width in $grid-breakpoints {
+  @media (min-width: $min-width) {
+    .container {
+      @if map-has-key($container-widths, $breakpoint) {
+        max-width: map-get($container-widths, $breakpoint);
+      }
+    }
+    @for $i from 1 through $grid-columns {
+      .col-#{$breakpoint}-#{$i} {
+        width: (100 / $grid-columns) * $i * 1%;
+        padding: 0 #{$column-padding};
+        margin-top: $column-padding + 5;
+      }
+    }
+  }
+}
+
+.single-service {
+  background-color: tomato;
+}

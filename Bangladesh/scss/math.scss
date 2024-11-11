@@ -1,0 +1,73 @@
+@use 'sass:math';
+
+.eaual {
+  margin: 10px == 10px;
+  margin: 10px != 10px;
+}
+
+.relational {
+  margin: 10px <= 20px;
+  margin: 10px >= 20px;
+}
+
+.numatic {
+  padding: math.$max-number;
+  padding: math.$min-number;
+  padding: math.$e;
+  padding: math.$pi;
+  padding: math.$epsilon;
+  padding: math.$max-safe-integer;
+  padding: math.$min-safe-integer;
+  padding: math.ceil(3.1);
+  padding: math.ceil(4.1);
+  padding: math.ceil(4.2);
+  padding: math.ceil(4.9);
+  padding: math.clamp(10, 9, 20);
+  padding: math.floor(4);
+  padding: math.floor(4.1);
+  padding: math.floor(4.2);
+  padding: math.floor(4.3);
+  padding: math.floor(4.9);
+  padding: math.max(10, 20, 30, 40, 50);
+  padding: math.min(10, 20, 30, 40, 50);
+  padding: math.round(4.9);
+  padding: math.round(4.4);
+  padding: math.round(4.5);
+  padding: math.abs(10px);
+  padding: math.abs(-10px);
+  padding: math.pow(5, 2);
+  padding: math.sqrt(100);
+  padding: math.sqrt(25);
+  padding: math.div(500, 10);
+  padding: math.percentage(math.div(100px, 50px));
+  // padding: math.random(100px);
+  padding: 400px + 10;
+  padding: 400px - 10;
+  padding: 400px * 10;
+  // padding: math.div(4000px, 10px);
+  // margin: (5000px / 10px);
+  // margin: (5000px % 10px);
+  // margin: (30 + 30 - 3 * 4 / 4);
+  // margin: (30 + 30 - 3 * 1);
+  // margin: (30 + 30 - 3);
+  // margin: (60 - 3) + px;
+  // margin: 30 == 30 and 20 != 30;
+  // margin: 30 == 30 and 20 != 20;
+  // margin: 30 != 30 and 20 != 20;
+  // margin: 30 != 30 and 20 != 30;
+  // margin: 30 == 30 or 20 != 20;
+
+  margin: not true;
+  margin: not false;
+
+  margin: true and true;
+  margin: true and false;
+  margin: false and true;
+  margin: false and false;
+
+  margin: true or true;
+  margin: true or false;
+  margin: false or true;
+  margin: false or false;
+
+}

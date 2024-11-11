@@ -1,0 +1,79 @@
+@use 'sass:math';
+
+$inchToPx: 96px; // 1 inch = 96 pixels
+$cmToPx: math.div($inchToPx, 2.54); // 1 centimeter = 96 / 2.54 pixels
+$mmToPx: math.div($cmToPx, 10); // 1 millimeter = 1/10 of a centimeter in pixels
+$ptToPx: math.div($inchToPx, 72); // 1 point = 1/72 of an inch in pixels
+$pcToPx: math.div($ptToPx * 12, 1); // 1 pica = 12 points in pixels
+$emToPx: 16px; // Assuming 1em = 16 pixels (default font size)
+$remToPx: 16px; // Assuming 1rem = 16 pixels (default root font size)
+$exToPx: math.div(
+  $emToPx * 0.5,
+  1
+); // Assuming x-height is half of the font size
+$chToPx: $emToPx; // Assuming "0" glyph width is equal to the font size
+$lhToPx: math.div(
+  $emToPx * 1.2,
+  1
+); // Assuming line-height is 1.2 times the font size
+$qToPx: math.div(
+  $mmToPx,
+  4
+); // 1 quarter-millimeter = 1/4 of a millimeter in pixels
+
+.test {
+  margin: $inchToPx; // Set margin to 1 inch in pixels (96px)
+  margin: $cmToPx; // Set margin to 1 centimeter in pixels
+  margin: $mmToPx; // Set margin to 1 millimeter in pixels
+  margin: $ptToPx; // Set margin to 1 point in pixels
+  margin: $pcToPx; // Set margin to 1 pica in pixels
+  margin: $emToPx; // Set margin to 1em in pixels
+  margin: $remToPx; // Set margin to 1rem in pixels
+  margin: $exToPx; // Set margin to 1ex in pixels
+  margin: $chToPx; // Set margin to 1ch in pixels
+  margin: $lhToPx; // Set margin to 1lh in pixels
+  margin: $qToPx; // Set margin to 1q in pixels
+}
+
+// .test {
+//   padding: 1in == 96px;
+//   padding: 1in == 2.54cm;
+//   padding: 1in == 25.4mm;
+//   padding: 1in == 72pt;
+//   padding: 1in == 6pc;
+//   padding: 1cm == 10mm;
+//   padding: 1cm == 37.8px;
+//   padding: 1mm == 3.78px;
+//   padding: 1pt == 1.33px;
+//   padding: 1pc == 16px;
+//   padding: 1pc == 12pt;
+// }
+
+$inchToPx: 96px; // 1 inch = 96 pixels
+$cmToPx: math.div(
+  $inchToPx,
+  2.54
+); // 1 centimeter = 96 / 2.54 pixels, approximately 37.7952755906px
+$mmToPx: math.div(
+  $inchToPx,
+  25.4
+); // 1 millimeter = 96 / 25.4 pixels, approximately 3.77952755906px
+$ptToPx: math.div(
+  $inchToPx,
+  72
+); // 1 point = 96 / 72 pixels, approximately 1.33333333333px
+$pcToPx: math.div($inchToPx, 6); // 1 pica = 96 / 6 pixels, approximately 16px
+
+.test {
+  padding: 1in == $inchToPx; // 1 inch = 96 pixels
+  padding: 1in == $cmToPx; // 1 inch = approximately 37.8 pixels
+  padding: 1in == $mmToPx; // 1 inch = approximately 25.4 pixels
+  padding: 1in == $ptToPx; // 1 inch = approximately 72 pixels
+  padding: 1in == $pcToPx; // 1 inch = 6 picas, approximately 16 pixels
+  padding: 1cm == 10mm; // 1 centimeter = 10 millimeters
+  padding: 1cm == $cmToPx; // 1 centimeter = approximately 37.8 pixels
+  padding: 1mm == $mmToPx; // 1 millimeter = approximately 3.78 pixels
+  padding: 1pt == $ptToPx; // 1 point = approximately 1.33 pixels
+  padding: 1pc == $pcToPx; // 1 pica = approximately 16 pixels
+  padding: 1pc == $ptToPx * 12; // 1 pica = 12 points
+}

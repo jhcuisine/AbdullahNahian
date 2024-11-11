@@ -1,0 +1,38 @@
+@use 'sass:math';
+
+.box {
+  font-size: 10px + 20px;
+  font-size: 10px - 20px;
+  font-size: 10px * 2;
+  font-size: math.div(10px, 2);
+}
+
+.numatic {
+  padding: math.$max-number;
+  padding: math.$min-number;
+  padding: math.$max-safe-integer;
+  padding: math.$min-safe-integer;
+  padding: math.$pi;
+  padding: math.$e;
+  padding: math.$epsilon;
+  padding: math.abs(3.1);
+  padding: math.ceil(3.1);
+  padding: math.round(3.1);
+  padding: math.floor(3.5);
+  padding: math.clamp(10, 50, 30);
+}
+
+.logic {
+  margin: true and true;
+  margin: true and false;
+  margin: false and true;
+  margin: false and false;
+
+  padding: true or true;
+  padding: true or false;
+  padding: false or true;
+  padding: false or false;
+
+  width: not true;
+  width: not false;
+}

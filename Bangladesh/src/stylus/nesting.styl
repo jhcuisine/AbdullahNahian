@@ -1,0 +1,94 @@
+// background-color = green;
+// color = black;
+// font-family = Verdana, Geneva, Tahoma, sans-serif;
+
+// .navebar {
+// background-color: background-color;
+// color: color;
+// font-family: font-family;
+
+// ul {
+// margin: 10px;
+
+// li {
+// list-style: none;
+
+// a {
+// text-decoration: none;
+
+// &:hover {
+// text-decoration: underline;
+// }
+// }
+// }
+// }
+// }
+// .button {
+// background-color: blue;
+// color: white;
+
+// &:hover {
+// background-color: green;
+// }
+
+// &:focus {
+// background-color: yellow;
+// color: red;
+// }
+
+// &::before {
+// content: '->';
+// }
+
+// &::after {
+// content: '❤';
+// }
+// }
+.card {
+    padding: 20px;
+
+    .title {
+        font-size: 10px;
+    }
+
+    + .subtitle {
+        font-size: 14px;
+        color: gray;
+    }
+}
+
+.container {
+    color: green;
+
+    > .item {
+        color: purple;
+    }
+}
+
+.alert {
+    color: red;
+
+    ~ .message {
+        color: darkred;
+    }
+}
+
+.wrapper {
+    color: black;
+
+    .content {
+        color: blue;
+
+        > .title {
+            font-weight: bold;
+
+            + .subtitle {
+                color: gray;
+            }
+
+            ~ .extra-info {
+                color: lightgray;
+            }
+        }
+    }
+}

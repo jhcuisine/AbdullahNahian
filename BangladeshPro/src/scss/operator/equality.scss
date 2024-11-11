@@ -1,0 +1,14 @@
+// @debug 1px == 1px; // true
+// @debug 1px != 1em; // true
+// @debug 1 != 1px; // true
+// @debug 96px == 1in; // true
+// @debug 1in == 2.54cm;
+// @debug 1cm == 10mm;
+// @debug 1in == 72pt;
+// // @debug 1pt == (1/72)in;
+// @debug 1pc == 12pt;
+
+// @debug 1in == 6pc;
+// @debug 1in == 25.4mm;
+
+

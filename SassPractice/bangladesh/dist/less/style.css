@@ -1,0 +1,40 @@
+.example {
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+  background: -webkit-linear-gradient(top, white, black);
+  background: -o-linear-gradient(top, white, black);
+  background: linear-gradient(to bottom, white, black);
+}
+#header {
+  color: #4D926F;
+  margin: 20px;
+}
+#header .nested {
+  font-size: 15px;
+}
+@media (max-width: 600px) {
+  #header {
+    color: #3b7156;
+  }
+}
+.widget {
+  color: #efefef;
+  background-color: #efefef;
+}
+.block {
+  color: red;
+  color: blue;
+}
+.block .inner {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */

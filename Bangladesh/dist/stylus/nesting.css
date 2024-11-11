@@ -1,0 +1,2 @@
+.card{padding:20px}.card .title{font-size:10px}.card + .subtitle{font-size:14px;color:#808080}.container{color:#008000}.container > .item{color:#800080}.alert{color:#f00}.alert ~ .message{color:#8b0000}.wrapper{color:#000}.wrapper .content{color:#00f}.wrapper .content > .title{font-weight:bold}.wrapper .content > .title + .subtitle{color:#808080}.wrapper .content > .title ~ .extra-info{color:#d3d3d3}
+/*# sourceMappingURL=nesting.css.map */

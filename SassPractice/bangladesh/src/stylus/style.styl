@@ -1,0 +1,44 @@
+color = #4D926F;
+base = 10px;
+
+border-radius(radius) {
+  border-radius: radius;
+}
+
+// Use mixins and variables
+#header {
+  color: color;
+  margin: base * 2;
+  padding: base / 2;
+  border: 1px solid darken(color, 10%);
+  border-radius(5px);
+
+  .nested {
+    font-size: base * 1.5;
+    color: lighten(color, 20%);
+  }
+}
+
+// Nested media query
+@media (max-width: 600px) {
+  #header {
+    color: darken(color, 10%);
+    margin: base;
+    padding: (base / 4);
+
+    .nested {
+      font-size: base;
+      color: lighten(color, 10%);
+    }
+  }
+}
+
+multiply(a, b) {
+  a * b;
+}
+
+// Use function in styles
+#footer {
+  font-size: multiply(base, 2);
+  margin: multiply(base, 3);
+}
